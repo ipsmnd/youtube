@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Clone - YouTube Clone</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <i class="material-icons"></i>
+            <span>YouTube Clone</span>
+        </div>
+
+        <div class="search-container">
+            <input type="text" placeholder="Search">
+            <button><i class="material-icons">search</i></button>
+        </div>
+
+        <div class="user-actions">
+            <button><i class="material-icons">notifications</i></button>
+            <button class="upload-btn"><i class="material-icons">cloud_upload</i> Upload</button>
+            <button><i class="material-icons">account_circle</i></button>
+        </div>
+    </header>
+
+
+    <!-- Sidebar -->
+    <div class="row">
+
+        <nav class="sidebar">
+            <div class="sidebar-item active">
+                <i class="material-icons">home</i>
+                <span>Home</span>
+            </div>
+            <div class="sidebar-item">
+                <i class="material-icons">explore</i>
+                <span>Explore</span>
+            </div>
+            <div class="sidebar-item">
+                <i class="material-icons">subscriptions</i>
+                <span>Subscriptions</span>
+            </div>
+            <div class="sidebar-item">
+                <i class="material-icons">video_library</i>
+                <span>Library</span>
+            </div>
+            <div class="sidebar-item">
+                <i class="material-icons">history</i>
+                <span>History</span>
+            </div>
+            <div class="sidebar-item">
+                <i class="material-icons">watch_later</i>
+                <span>Watch later</span>
+            </div>
+            <div class="sidebar-item">
+                <i class="material-icons">thumb_up</i>
+                <span>Liked videos</span>
+            </div>
+            
+        </nav>
+    
+
+    <!-- Main Content - Video Grid -->
+    <main class="content" id="main-content">
+        <div class="video-grid">
+            <!-- Video cards will be generated here -->
+        </div>
+    </main>
+
+    <!-- Video Player Page (hidden initially) -->
+    <div class="video-player-page" id="video-player-page">
+        <div class="video-container">
+            <div class="main-player" id="video-player">
+
+            </div>
+
+            <h1 class="video-title" id="video-title">Video Title</h1>
+
+            <div class="video-actions">
+                <div class="action-buttons">
+                    <button class="action-btn">
+                        <i class="material-icons">thumb_up</i>
+                        <span>2.1K</span>
+                    </button>
+                    <button class="action-btn">
+                        <i class="material-icons">thumb_down</i>
+                        <span>Dislike</span>
+                    </button>
+                    <button class="action-btn">
+                        <i class="material-icons">reply</i>
+                        <span>Share</span>
+                    </button>
+                    <button class="action-btn">
+                        <i class="material-icons">playlist_add</i>
+                        <span>Save</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="channel-info">
+                <div class="channel-avatar"></div>
+                <div class="channel-details">
+                    <div class="channel-name" id="channel-name">Channel Name</div>
+                    <div class="subscriber-count">1.5M subscribers</div>
+                </div>
+                <button class="subscribe-btn">Subscribe</button>
+            </div>
+
+            <div class="comments-section">
+                <h3>Comments • <span id="comment-count">24</span></h3>
+
+                <div class="comment">
+                    <div class="comment-avatar"></div>
+                    <div class="comment-content">
+                        <h4>User Name</h4>
+                        <p class="comment-text">This is a great video! Thanks for sharing.</p>
+                        <div class="comment-actions">
+                            <span class="comment-action"><i class="material-icons">thumb_up</i> 125</span>
+                            <span class="comment-action"><i class="material-icons">thumb_down</i></span>
+                            <span class="comment-action">Reply</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="comment">
+                    <div class="comment-avatar"></div>
+                    <div class="comment-content">
+                        <h4>Another User</h4>
+                        <p class="comment-text">I learned so much from this video. Can't wait for the next one!</p>
+                        <div class="comment-actions">
+                            <span class="comment-action"><i class="material-icons">thumb_up</i> 42</span>
+                            <span class="comment-action"><i class="material-icons">thumb_down</i></span>
+                            <span class="comment-action">Reply</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script src="scrtipt.js"></script>
+</body>
+
+</html>
